@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R P C</title>
+    <script src="RPC.js"></script>
+    <link rel="stylesheet" href="RPS.css" />
+</head>
+
+<body>
+    <p class="title">Rock Paper Cisor</p>
+    <!----------------------------------------------------------->
+    <button class="rpc-btn" onclick="rock_paper_scissor('rock');"><img src="rock.png" class="rpc-icon"></button>
+    <!----------------------------------------------------------->
+    <button class="rpc-btn" onclick="rock_paper_scissor('paper');"><img src="paper.png" class="rpc-icon"></button>
+    <!----------------------------------------------------------->
+    <button class="rpc-btn" onclick="rock_paper_scissor('scissor');"><img src="scissor.png" class="rpc-icon"></button>
+    <!----------------------------------------------------------->
+    <p class="res result"></p>
+    <p class="moves"></p>
+    <p class="score"></p>
+    <button onclick="score.wins=score.losses=score.ties = 0;
+    localStorage.removeItem('score');
+    updateScore();
+    " class="reset-score">Reset Score</button>
+
+
+
+</body>
+
+</html>
